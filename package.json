@@ -1,0 +1,36 @@
+{
+  "name": "tracebounty",
+  "version": "0.1.0",
+  "description": "Package your own Claude Code session transcripts into eval task candidates. Trace-only, consent-first, paid bounties for accepted tasks.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "tracebounty": "./dist/cli/index.js"
+  },
+  "files": [
+    "dist",
+    "SKILL.md",
+    "SECURITY.md",
+    "PRIVACY.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "cli": "tsx src/cli/index.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "commander": "^12.1.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  }
+}
